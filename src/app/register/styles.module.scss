@@ -1,0 +1,122 @@
+.header{
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+    animation: HeaderAnimation 1s;
+    
+
+    .logo{
+        display: flex;
+        margin-left: 3rem;
+        transition: transform .5s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+        .svg{
+            font-weight: bold;
+        }
+
+        .LogoName{
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: .5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .inscription{
+        display: flex;
+        margin-left: auto;
+        margin-right: 3rem;
+
+        .info{
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+   
+
+        .login{
+            font-size: 15px;
+            font-weight: bold;
+            transition: transform .7s;
+            color: #FF0000;
+
+            &:hover{
+                transform:  scale(1.2);
+            }   
+            
+        }
+
+    }
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    
+    .description{
+        width: 30%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+        h2{
+            font-size: 35px;
+
+            p{
+                font-size: 40px;
+                color: #FF0000;
+            }
+        }
+
+        .enterWithGoogle{
+            display: flex;
+            font-size: 30px;
+            height: 4rem;
+            border: none;
+            background: #FF8C00;
+            cursor: pointer;
+            border-radius: 8px;
+            width: 90%;
+            transition: transform .5s;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            .svg{
+                margin-left: .5rem  ;
+            }
+        }
+    }
+
+    .separator{
+        height:80vh;
+        border: 1px solid;
+        width: 2px;
+        margin-right: 1rem;
+    }
+
+}
+
+@keyframes HeaderAnimation {
+    from{
+        margin-top: -6rem;
+    }
+    to{
+        margin-top: 0;
+    }
+    
+}

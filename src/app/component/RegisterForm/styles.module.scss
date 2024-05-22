@@ -1,0 +1,58 @@
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    background: #4B0082;
+    padding: 2rem;
+    height: 33rem;
+    width: 30%;
+    border-radius: 8px;
+    color: #fff;
+    animation: FormAnimation 1.2s;
+
+    span{
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    input{
+        height: 2rem;
+        border-radius: 5px;
+        background: #F8F8FF;
+        padding-left: .5rem;
+        transition: background .6s;
+
+        &:hover{
+        background: #DCDCDC;
+        }
+    }
+
+    .eyes{
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: auto;
+    }
+
+    .btn{
+        height: 3rem;
+        margin-top: auto;
+        border-radius: 5px;
+        background: #F8F8FF;
+        transition: transform .6s;
+        font-weight: bold;
+        background: #F8F8FF;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@keyframes FormAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

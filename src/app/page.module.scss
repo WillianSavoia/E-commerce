@@ -1,0 +1,50 @@
+.content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+    animation: textAnimation 1.5s;
+    
+    .svg{
+        color:#FFA500;
+        transition: transform .5s;
+
+        &:hover{
+            transform: translateY(-30px);
+         
+        }
+    }
+    
+
+    .text{
+        width: 30%;
+        font-size: 30px;
+        font-weight: bold;
+        transition: transform .5s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+        .button{
+            color: #191970;
+            font-size: 35px;
+        }
+
+        p{
+            color: 	#FF0000;
+            font-size: 50px;
+        }
+    }
+}
+
+@keyframes textAnimation{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
+}
